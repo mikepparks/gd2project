@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6157"
-	"mapversion" "511"
+	"mapversion" "514"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "511"
+	"mapversion" "514"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -12648,7 +12648,7 @@ world
 		side
 		{
 			"id" "7004"
-			"plane" "(93.5586 -451.602 186) (69.6016 -450.137 186) (76.9258 -330.36 186)"
+			"plane" "(93.5586 -455 186) (69.6016 -453.494 186) (76.9258 -330.361 186)"
 			"material" "TOOLS/TOOLSPLAYERCLIP"
 			"uaxis" "[0.0610485 0.998135 0 -59.8099] 0.25"
 			"vaxis" "[0.998135 -0.0610485 0 -39.8054] 0.25"
@@ -12659,7 +12659,7 @@ world
 		side
 		{
 			"id" "7003"
-			"plane" "(100.879 -331.824 56.2203) (76.9297 -330.36 56.2203) (69.6016 -450.137 56.2203)"
+			"plane" "(100.883 -331.865 56.2203) (76.9297 -330.359 56.2203) (69.6016 -453.49 56.2203)"
 			"material" "TOOLS/TOOLSPLAYERCLIP"
 			"uaxis" "[0.0610485 0.998135 0 -59.8099] 0.25"
 			"vaxis" "[0.998135 -0.0610485 0 -39.8054] 0.25"
@@ -12670,9 +12670,9 @@ world
 		side
 		{
 			"id" "7002"
-			"plane" "(93.5547 -451.601 56.2195) (69.5977 -450.136 56.2195) (69.6055 -450.136 186)"
+			"plane" "(93.5586 -454.999 56.2195) (69.5977 -453.493 56.2195) (69.6016 -453.493 186)"
 			"material" "TOOLS/TOOLSPLAYERCLIP"
-			"uaxis" "[-0.998135 0.0610485 0 39.8054] 0.25"
+			"uaxis" "[-0.998029 0.0627529 0 39.8054] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
@@ -12681,9 +12681,9 @@ world
 		side
 		{
 			"id" "7001"
-			"plane" "(76.9297 -330.36 56.2195) (100.882 -331.825 56.2195) (100.879 -331.825 186)"
+			"plane" "(76.9297 -330.36 56.2195) (100.882 -331.866 56.2195) (100.879 -331.866 186)"
 			"material" "TOOLS/TOOLSPLAYERCLIP"
-			"uaxis" "[-0.998135 0.0610485 0 39.8054] 0.25"
+			"uaxis" "[-0.998029 0.0627529 0 39.8054] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
@@ -12692,9 +12692,9 @@ world
 		side
 		{
 			"id" "7000"
-			"plane" "(69.6008 -450.137 56.2195) (76.9269 -330.36 56.2195) (76.927 -330.359 186)"
+			"plane" "(69.6013 -453.486 56.2195) (76.9269 -330.36 56.2195) (76.9268 -330.363 186)"
 			"material" "TOOLS/TOOLSPLAYERCLIP"
-			"uaxis" "[0.0610485 0.998135 0 -59.8099] 0.25"
+			"uaxis" "[0.05939 0.998235 0 -59.8099] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
@@ -12703,9 +12703,9 @@ world
 		side
 		{
 			"id" "6999"
-			"plane" "(100.882 -331.824 56.2195) (93.5562 -451.598 56.2195) (93.5562 -451.598 186)"
+			"plane" "(100.882 -331.869 56.2195) (93.5559 -455 56.2195) (93.5559 -454.996 186)"
 			"material" "TOOLS/TOOLSPLAYERCLIP"
-			"uaxis" "[0.0610485 0.998135 0 -59.8099] 0.25"
+			"uaxis" "[0.05939 0.998235 0 -59.8099] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
@@ -23874,16 +23874,6 @@ world
 	}
 	group
 	{
-		"id" "44610"
-		editor
-		{
-			"color" "228 125 0"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-		}
-	}
-	group
-	{
 		"id" "44630"
 		editor
 		{
@@ -24112,6 +24102,16 @@ world
 			"visgroupautoshown" "1"
 		}
 	}
+	group
+	{
+		"id" "44610"
+		editor
+		{
+			"color" "228 125 0"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
 }
 entity
 {
@@ -24166,13 +24166,18 @@ entity
 entity
 {
 	"id" "42053"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 90 0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
 	"model" "models/props_interiors/lights_florescent01a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
 	"skin" "1"
 	"solid" "6"
+	"targetname" "floor_four_hall_light_fixture"
 	"origin" "965 -390 188"
 	editor
 	{
@@ -24394,13 +24399,18 @@ entity
 entity
 {
 	"id" "42723"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 90 0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
 	"model" "models/props_interiors/lights_florescent01a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
 	"skin" "1"
 	"solid" "6"
+	"targetname" "floor_four_hall_light_fixture"
 	"origin" "680 -390 188"
 	editor
 	{
@@ -24622,13 +24632,18 @@ entity
 entity
 {
 	"id" "42743"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 90 0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
 	"model" "models/props_interiors/lights_florescent01a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
 	"skin" "1"
 	"solid" "6"
+	"targetname" "floor_four_hall_light_fixture"
 	"origin" "422 -390 188"
 	editor
 	{
@@ -24850,13 +24865,18 @@ entity
 entity
 {
 	"id" "42783"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 90 0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
 	"model" "models/props_interiors/lights_florescent01a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
 	"skin" "1"
 	"solid" "6"
+	"targetname" "floor_four_hall_light_fixture"
 	"origin" "127 -388 188"
 	editor
 	{
@@ -25078,13 +25098,18 @@ entity
 entity
 {
 	"id" "42823"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 90 0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
 	"model" "models/props_interiors/lights_florescent01a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
 	"skin" "1"
 	"solid" "6"
+	"targetname" "floor_four_hall_light_fixture"
 	"origin" "-230 -386 188"
 	editor
 	{
@@ -25306,13 +25331,18 @@ entity
 entity
 {
 	"id" "42843"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 90 0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
 	"model" "models/props_interiors/lights_florescent01a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
 	"skin" "1"
 	"solid" "6"
+	"targetname" "floor_four_hall_light_fixture"
 	"origin" "-575 -384 188"
 	editor
 	{
@@ -25534,13 +25564,18 @@ entity
 entity
 {
 	"id" "42903"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 179.5 0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
 	"model" "models/props_interiors/lights_florescent01a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
 	"skin" "1"
 	"solid" "6"
+	"targetname" "floor_four_hall_light_fixture"
 	"origin" "-28.5849 -585.432 188"
 	editor
 	{
@@ -25762,13 +25797,18 @@ entity
 entity
 {
 	"id" "42943"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 179.5 0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
 	"model" "models/props_interiors/lights_florescent01a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
 	"skin" "1"
 	"solid" "6"
+	"targetname" "floor_four_hall_light_fixture"
 	"origin" "-28.5849 -902.432 188"
 	editor
 	{
@@ -25990,13 +26030,18 @@ entity
 entity
 {
 	"id" "43023"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 179.5 0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
 	"model" "models/props_interiors/lights_florescent01a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
 	"skin" "1"
 	"solid" "6"
+	"targetname" "floor_four_hall_light_fixture"
 	"origin" "130.415 -88.4315 188"
 	editor
 	{
@@ -26218,13 +26263,18 @@ entity
 entity
 {
 	"id" "43063"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 179.5 0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
 	"model" "models/props_interiors/lights_florescent01a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
 	"skin" "1"
 	"solid" "6"
+	"targetname" "floor_four_hall_light_fixture"
 	"origin" "128.415 223.568 188"
 	editor
 	{
@@ -26446,13 +26496,18 @@ entity
 entity
 {
 	"id" "43083"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 269 0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
 	"model" "models/props_interiors/lights_florescent01a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
 	"skin" "1"
 	"solid" "6"
+	"targetname" "floor_four_hall_light_fixture"
 	"origin" "959.936 384.8 188"
 	editor
 	{
@@ -26674,13 +26729,18 @@ entity
 entity
 {
 	"id" "43143"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 269 0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
 	"model" "models/props_interiors/lights_florescent01a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
 	"skin" "1"
 	"solid" "6"
+	"targetname" "floor_four_hall_light_fixture"
 	"origin" "640.936 382.8 188"
 	editor
 	{
@@ -26902,13 +26962,18 @@ entity
 entity
 {
 	"id" "43183"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 269 0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
 	"model" "models/props_interiors/lights_florescent01a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
 	"skin" "1"
 	"solid" "6"
+	"targetname" "floor_four_hall_light_fixture"
 	"origin" "-955.064 447.8 188"
 	editor
 	{
@@ -27130,13 +27195,18 @@ entity
 entity
 {
 	"id" "43203"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 269 0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
 	"model" "models/props_interiors/lights_florescent01a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
 	"skin" "1"
 	"solid" "6"
+	"targetname" "floor_four_hall_light_fixture"
 	"origin" "-702.064 447.8 188"
 	editor
 	{
@@ -27358,13 +27428,18 @@ entity
 entity
 {
 	"id" "43243"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 359.5 0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
 	"model" "models/props_interiors/lights_florescent01a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
 	"skin" "1"
 	"solid" "6"
+	"targetname" "floor_four_hall_light_fixture"
 	"origin" "-573.415 217.432 188"
 	editor
 	{
@@ -27586,13 +27661,18 @@ entity
 entity
 {
 	"id" "43323"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 359.5 0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
 	"model" "models/props_interiors/lights_florescent01a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
 	"skin" "1"
 	"solid" "6"
+	"targetname" "floor_four_hall_light_fixture"
 	"origin" "-574.415 -111.568 188"
 	editor
 	{
@@ -27814,13 +27894,18 @@ entity
 entity
 {
 	"id" "43343"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 359.5 0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
 	"model" "models/props_interiors/lights_florescent01a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
 	"skin" "1"
 	"solid" "6"
+	"targetname" "floor_four_hall_light_fixture"
 	"origin" "965.585 808.432 188"
 	editor
 	{
@@ -28042,13 +28127,18 @@ entity
 entity
 {
 	"id" "43383"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 269 0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
 	"model" "models/props_interiors/lights_florescent01a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
 	"skin" "1"
 	"solid" "6"
+	"targetname" "floor_four_hall_light_fixture"
 	"origin" "137.936 472.8 188"
 	editor
 	{
@@ -28270,13 +28360,18 @@ entity
 entity
 {
 	"id" "43523"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 269 0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
 	"model" "models/props_interiors/lights_florescent01a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
 	"skin" "1"
 	"solid" "6"
+	"targetname" "floor_four_hall_light_fixture"
 	"origin" "-278.064 675.8 188"
 	editor
 	{
@@ -28606,13 +28701,18 @@ entity
 entity
 {
 	"id" "43483"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 269 0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
 	"model" "models/props_interiors/lights_florescent01a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
 	"skin" "1"
 	"solid" "6"
+	"targetname" "floor_four_hall_light_fixture"
 	"origin" "-275.064 455.8 188"
 	editor
 	{
@@ -28675,234 +28775,6 @@ entity
 }
 entity
 {
-	"id" "44611"
-	"classname" "env_sprite"
-	"framerate" "10.0"
-	"GlowProxySize" "2.0"
-	"HDRColorScale" "1.0"
-	"model" "sprites/light_glow03.vmt"
-	"renderamt" "255"
-	"rendercolor" "201 213 224 500"
-	"rendermode" "9"
-	"scale" "0.75"
-	"spawnflags" "1"
-	"targetname" "floor_four_hall_light_sprite"
-	"origin" "-43.561 267.704 182"
-	editor
-	{
-		"color" "228 125 0"
-		"groupid" "44610"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 1000]"
-	}
-}
-entity
-{
-	"id" "44614"
-	"classname" "light_spot"
-	"_cone" "85"
-	"_distance" "0"
-	"_exponent" "1"
-	"_inner_cone" "80"
-	"_light" "201 213 224 500"
-	"_lightHDR" "-1 -1 -1 1"
-	"_lightscaleHDR" "1"
-	"_quadratic_attn" "1"
-	"angles" "-90 89.5 0"
-	"pitch" "-90"
-	"spawnflags" "0"
-	"targetname" "floor_four_hall_light"
-	"origin" "-43.509 267.966 184.411"
-	editor
-	{
-		"color" "228 125 0"
-		"groupid" "44610"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 500]"
-	}
-}
-entity
-{
-	"id" "44619"
-	"classname" "prop_static"
-	"angles" "0 179.5 0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"model" "models/props_interiors/lights_florescent01a.mdl"
-	"skin" "1"
-	"solid" "6"
-	"origin" "-43.585 267.568 188"
-	editor
-	{
-		"color" "228 125 0"
-		"groupid" "44610"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 7000]"
-	}
-}
-entity
-{
-	"id" "44623"
-	"classname" "func_dustmotes"
-	"Alpha" "255"
-	"Color" "201 213 224"
-	"DistMax" "80"
-	"Frozen" "0"
-	"LifetimeMax" "5"
-	"LifetimeMin" "3"
-	"SizeMax" "15"
-	"SizeMin" "10"
-	"SpawnRate" "30"
-	"SpeedMax" "13"
-	"StartDisabled" "0"
-	solid
-	{
-		"id" "44624"
-		side
-		{
-			"id" "5140"
-			"plane" "(0.796875 311.182 64) (-43.0234 331.564 64) (-89.1992 311.965 64)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[0.00872656 1 0 -36.8353] 0.25"
-			"vaxis" "[1 -0.00872656 0 19.6755] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "5139"
-			"plane" "(-109.582 268.144 64) (-89.1953 311.977 64) (-43.5921 267.587 191.969)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[0.00872656 1 0 -36.8353] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "5138"
-			"plane" "(-43.5857 267.566 192) (-89.1992 311.965 64) (-43.0225 331.564 64)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[-1 0.00872656 0 -19.6755] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "5137"
-			"plane" "(-43.585 267.563 192.012) (-43.026 331.566 64) (0.796982 311.183 64)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[-1 0.00872656 0 -19.6755] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "5136"
-			"plane" "(-43.5831 267.574 192) (0.795914 311.183 64) (20.4118 267 64)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[0.00872656 1 0 -36.8353] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "5135"
-			"plane" "(20.413 267.012 64) (0.0102234 221.184 64) (-43.584 267.57 192)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[0.00872656 1 0 -36.8353] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "5134"
-			"plane" "(0.0126343 221.187 64) (-44.1623 201.572 64) (-43.5872 267.568 192)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[-1 0.00872656 0 -19.6755] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "5133"
-			"plane" "(-44.1619 201.572 64) (-89.9835 221.972 64) (-43.5948 267.568 192)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[-1 0.00872656 0 -19.6755] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "5132"
-			"plane" "(-89.9861 221.972 64) (-109.584 268.145 64) (-43.5869 267.569 192)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[0.00872656 1 0 -36.8353] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		editor
-		{
-			"color" "228 125 0"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-		}
-	}
-	editor
-	{
-		"color" "228 125 0"
-		"groupid" "44610"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 5500]"
-	}
-}
-entity
-{
-	"id" "44625"
-	"classname" "light_spot"
-	"_cone" "40"
-	"_exponent" "1"
-	"_inner_cone" "35"
-	"_light" "201 213 224 30"
-	"_lightHDR" "-1 -1 -1 1"
-	"_lightscaleHDR" "1"
-	"_quadratic_attn" "1"
-	"angles" "90 89.5 0"
-	"pitch" "90"
-	"spawnflags" "0"
-	"targetname" "floor_four_hall_light"
-	"origin" "-43.585 267.568 101"
-	editor
-	{
-		"color" "228 125 0"
-		"groupid" "44610"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 500]"
-	}
-}
-entity
-{
 	"id" "44631"
 	"classname" "env_sprite"
 	"framerate" "10.0"
@@ -28954,13 +28826,18 @@ entity
 entity
 {
 	"id" "44639"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 179.5 0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
 	"model" "models/props_interiors/lights_florescent01a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
 	"skin" "1"
 	"solid" "6"
+	"targetname" "floor_four_hall_light_fixture"
 	"origin" "-399.585 -212.432 188"
 	editor
 	{
@@ -29182,13 +29059,18 @@ entity
 entity
 {
 	"id" "44755"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 359.5 0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
 	"model" "models/props_interiors/lights_florescent01a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
 	"skin" "1"
 	"solid" "6"
+	"targetname" "floor_four_hall_light_fixture"
 	"origin" "-818.415 198.432 188"
 	editor
 	{
@@ -29410,13 +29292,18 @@ entity
 entity
 {
 	"id" "44775"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 359.5 0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
 	"model" "models/props_interiors/lights_florescent01a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
 	"skin" "1"
 	"solid" "6"
+	"targetname" "floor_four_hall_light_fixture"
 	"origin" "-816.415 -142.568 188"
 	editor
 	{
@@ -29746,13 +29633,18 @@ entity
 entity
 {
 	"id" "43403"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 269 0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
 	"model" "models/props_interiors/lights_florescent01a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
 	"skin" "1"
 	"solid" "6"
+	"targetname" "floor_four_hall_light_fixture"
 	"origin" "134.936 672.8 188"
 	editor
 	{
@@ -29866,13 +29758,18 @@ entity
 entity
 {
 	"id" "48375"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 90 0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
 	"model" "models/props_interiors/lights_florescent01a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
 	"skin" "1"
 	"solid" "6"
+	"targetname" "floor_four_hall_light_fixture"
 	"origin" "225 -900 188"
 	editor
 	{
@@ -30094,13 +29991,18 @@ entity
 entity
 {
 	"id" "48851"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 90 0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
 	"model" "models/props_interiors/lights_florescent01a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
 	"skin" "1"
 	"solid" "6"
+	"targetname" "floor_four_hall_light_fixture"
 	"origin" "893 -602 188"
 	editor
 	{
@@ -30322,13 +30224,18 @@ entity
 entity
 {
 	"id" "49182"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 90 0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
 	"model" "models/props_interiors/lights_florescent01a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
 	"skin" "1"
 	"solid" "6"
+	"targetname" "floor_four_hall_light_fixture"
 	"origin" "214 -600 188"
 	editor
 	{
@@ -30550,13 +30457,18 @@ entity
 entity
 {
 	"id" "49242"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 90 0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
 	"model" "models/props_interiors/lights_florescent01a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
 	"skin" "1"
 	"solid" "6"
+	"targetname" "floor_four_hall_light_fixture"
 	"origin" "887 -902 188"
 	editor
 	{
@@ -30891,13 +30803,18 @@ entity
 entity
 {
 	"id" "60552"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 269 0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
 	"model" "models/props_interiors/lights_florescent01a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
 	"skin" "1"
 	"solid" "6"
+	"targetname" "floor_four_hall_light_fixture"
 	"origin" "577.936 547.8 188"
 	editor
 	{
@@ -31119,13 +31036,18 @@ entity
 entity
 {
 	"id" "60694"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 269 0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
 	"model" "models/props_interiors/lights_florescent01a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
 	"skin" "1"
 	"solid" "6"
+	"targetname" "floor_four_hall_light_fixture"
 	"origin" "-387.064 -895.2 188"
 	editor
 	{
@@ -31296,6 +31218,239 @@ entity
 }
 entity
 {
+	"id" "44625"
+	"classname" "light_spot"
+	"_cone" "40"
+	"_exponent" "1"
+	"_inner_cone" "35"
+	"_light" "201 213 224 30"
+	"_lightHDR" "-1 -1 -1 1"
+	"_lightscaleHDR" "1"
+	"_quadratic_attn" "1"
+	"angles" "90 89.5 0"
+	"pitch" "90"
+	"spawnflags" "0"
+	"targetname" "floor_four_hall_light"
+	"origin" "-43.585 267.568 101"
+	editor
+	{
+		"color" "228 125 0"
+		"groupid" "44610"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "44623"
+	"classname" "func_dustmotes"
+	"Alpha" "255"
+	"Color" "201 213 224"
+	"DistMax" "80"
+	"Frozen" "0"
+	"LifetimeMax" "5"
+	"LifetimeMin" "3"
+	"SizeMax" "15"
+	"SizeMin" "10"
+	"SpawnRate" "30"
+	"SpeedMax" "13"
+	"StartDisabled" "0"
+	solid
+	{
+		"id" "44624"
+		side
+		{
+			"id" "5140"
+			"plane" "(0.796875 311.182 64) (-43.0234 331.564 64) (-89.1992 311.965 64)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[0.00872656 1 0 -36.8353] 0.25"
+			"vaxis" "[1 -0.00872656 0 19.6755] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "5139"
+			"plane" "(-109.582 268.144 64) (-89.1953 311.977 64) (-43.5921 267.587 191.969)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[0.00872656 1 0 -36.8353] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "5138"
+			"plane" "(-43.5857 267.566 192) (-89.1992 311.965 64) (-43.0225 331.564 64)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[-1 0.00872656 0 -19.6755] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "5137"
+			"plane" "(-43.585 267.563 192.012) (-43.026 331.566 64) (0.796982 311.183 64)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[-1 0.00872656 0 -19.6755] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "5136"
+			"plane" "(-43.5831 267.574 192) (0.795914 311.183 64) (20.4118 267 64)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[0.00872656 1 0 -36.8353] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "5135"
+			"plane" "(20.413 267.012 64) (0.0102234 221.184 64) (-43.584 267.57 192)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[0.00872656 1 0 -36.8353] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "5134"
+			"plane" "(0.0126343 221.187 64) (-44.1623 201.572 64) (-43.5872 267.568 192)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[-1 0.00872656 0 -19.6755] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "5133"
+			"plane" "(-44.1619 201.572 64) (-89.9835 221.972 64) (-43.5948 267.568 192)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[-1 0.00872656 0 -19.6755] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "5132"
+			"plane" "(-89.9861 221.972 64) (-109.584 268.145 64) (-43.5869 267.569 192)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[0.00872656 1 0 -36.8353] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "228 125 0"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	editor
+	{
+		"color" "228 125 0"
+		"groupid" "44610"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 5500]"
+	}
+}
+entity
+{
+	"id" "44619"
+	"classname" "prop_dynamic"
+	"angles" "0 179.5 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
+	"model" "models/props_interiors/lights_florescent01a.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"skin" "1"
+	"solid" "6"
+	"targetname" "floor_four_hall_light_fixture"
+	"origin" "-43.585 267.568 188"
+	editor
+	{
+		"color" "228 125 0"
+		"groupid" "44610"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 7000]"
+	}
+}
+entity
+{
+	"id" "44614"
+	"classname" "light_spot"
+	"_cone" "85"
+	"_distance" "0"
+	"_exponent" "1"
+	"_inner_cone" "80"
+	"_light" "201 213 224 500"
+	"_lightHDR" "-1 -1 -1 1"
+	"_lightscaleHDR" "1"
+	"_quadratic_attn" "1"
+	"angles" "-90 89.5 0"
+	"pitch" "-90"
+	"spawnflags" "0"
+	"targetname" "floor_four_hall_light"
+	"origin" "-43.509 267.966 184.411"
+	editor
+	{
+		"color" "228 125 0"
+		"groupid" "44610"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "44611"
+	"classname" "env_sprite"
+	"framerate" "10.0"
+	"GlowProxySize" "2.0"
+	"HDRColorScale" "1.0"
+	"model" "sprites/light_glow03.vmt"
+	"renderamt" "255"
+	"rendercolor" "201 213 224 500"
+	"rendermode" "9"
+	"scale" "0.75"
+	"spawnflags" "1"
+	"targetname" "floor_four_hall_light_sprite"
+	"origin" "-43.561 267.704 182"
+	editor
+	{
+		"color" "228 125 0"
+		"groupid" "44610"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
 	"id" "36"
 	"classname" "info_player_start"
 	"angles" "0 201 0"
@@ -31355,6 +31510,8 @@ entity
 		"OnPressed" "floor_four_hall_light_sprite,ShowSprite,,3,1"
 		"OnPressed" "floor_four_elevator_ding,PlaySound,,3.8,1"
 		"OnPressed" "floor_four_elevator_open,PlaySound,,4,1"
+		"OnPressed" "floor_four_hall_light_fixture,Skin,0,1,1"
+		"OnPressed" "floor_four_hall_light_fixture,Skin,1,3,1"
 	}
 	solid
 	{
